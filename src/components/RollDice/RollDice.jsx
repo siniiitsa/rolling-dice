@@ -10,15 +10,17 @@ class RollDice extends Component {
 
   getRandonDie = () => Math.floor(Math.random() * 6) + 1;
 
+  setDice = () => this.setState({
+    isRolling: false,
+    diceValues: [
+      this.getRandonDie(),
+      this.getRandonDie(),
+    ],
+  });
+
   roll = () => {
-    this.setState({
-      isRolling: true,
-      diceValues: [
-        this.getRandonDie(),
-        this.getRandonDie(),
-      ],
-    });
-    setTimeout(() => this.setState({ isRolling: false }), 810);
+    this.setState({ isRolling: true });
+    setTimeout(this.setDice, 810);
   };
 
   render() {
