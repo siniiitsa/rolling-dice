@@ -1,0 +1,30 @@
+.RollDice-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.RollDice-dice-wrapper {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.RollDice-btn {
+  cursor: pointer;
+  border: none;
+  offset: none;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  padding: 20px 0;
+  outline: none;
+  border-radius: 15px;
+}
+
+.RollDice-btn:disabled {
+  background-color: rgb(44, 44, 44);
+}
